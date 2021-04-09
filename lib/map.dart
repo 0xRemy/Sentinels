@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:project/cazapas.dart';
 import 'package:project/mapuaevac.dart';
 import 'package:project/consuelo.dart';
 
@@ -51,10 +52,15 @@ class map extends StatelessWidget {
         },
       ),
       Marker(
-          markerId: MarkerId('Casa Paz'),
-          position: LatLng(14.590973120670538, 120.97663003862802),
-          infoWindow: InfoWindow(
-              title: 'Casa Paz Corte Real', snippet: 'Evacuation Center')),
+        markerId: MarkerId('Casa Paz'),
+        position: LatLng(14.590973120670538, 120.97663003862802),
+        infoWindow: InfoWindow(
+            title: 'Casa Paz Corte Real', snippet: 'Evacuation Center'),
+        onTap: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => cazapas()));
+        },
+      )
     };
 
     return Scaffold(
