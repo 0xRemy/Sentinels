@@ -21,21 +21,30 @@ class map extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    BitmapDescriptor customIcon;
+    BitmapDescriptor.fromAssetImage(
+            ImageConfiguration(size: Size(12, 12)), 'image/Salba-Pin.png')
+        .then((d) {
+      customIcon = d;
+    });
+
     final Set<Marker> _markers = {
       Marker(
-          markerId: MarkerId('Mapua'),
-          position: LatLng(14.590475794207904, 120.97795912134634),
-          infoWindow: InfoWindow(
-              title: 'Mapua University', snippet: 'Evacuation Center')),
+        markerId: MarkerId('Mapua'),
+        position: LatLng(14.590475794207904, 120.97795912134634),
+        infoWindow:
+            InfoWindow(title: 'Mapua University', snippet: 'Evacuation Center'),
+        onTap: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => mapuaevac()));
+        },
+      ),
       Marker(
-          markerId: MarkerId('Casa Consuelo'),
-          position: LatLng(14.590851222365302, 120.9769847627427),
-          infoWindow: InfoWindow(
-              title: 'Casa Consuelo Dormitory', snippet: 'Evacuation Center'),
-          onTap: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => mapuaevac()));
-          }),
+        markerId: MarkerId('Casa Consuelo'),
+        position: LatLng(14.590851222365302, 120.9769847627427),
+        infoWindow: InfoWindow(
+            title: 'Casa Consuelo Dormitory', snippet: 'Evacuation Center'),
+      ),
       Marker(
           markerId: MarkerId('Casa Paz'),
           position: LatLng(14.590973120670538, 120.97663003862802),
@@ -70,7 +79,7 @@ class map extends StatelessWidget {
             GoogleMap(
               onMapCreated: _onMapCreated,
               initialCameraPosition:
-                  CameraPosition(target: _center, zoom: 15.0),
+                  CameraPosition(target: _center, zoom: 18.0),
               mapType: _currentMapType,
               markers: _markers,
               onCameraMove: _onCameraMove,
