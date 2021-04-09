@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:project/mapuaevac.dart';
+import 'package:project/consuelo.dart';
 
 class map extends StatelessWidget {
   Completer<GoogleMapController> _controller = Completer();
@@ -44,6 +45,10 @@ class map extends StatelessWidget {
         position: LatLng(14.590851222365302, 120.9769847627427),
         infoWindow: InfoWindow(
             title: 'Casa Consuelo Dormitory', snippet: 'Evacuation Center'),
+        onTap: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => consuelo()));
+        },
       ),
       Marker(
           markerId: MarkerId('Casa Paz'),
