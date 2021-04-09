@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:project/mapuaevac.dart';
 
 class map extends StatelessWidget {
   Completer<GoogleMapController> _controller = Completer();
-  static const LatLng _center = const LatLng(4.5421563, -122.677433);
-  final Set<Marker> _markers = {};
+  static const LatLng _center =
+      const LatLng(14.590528287567317, 120.97718433105983);
+
   LatLng _lastMapPoistion = _center;
   MapType _currentMapType = MapType.normal;
 
@@ -19,6 +21,28 @@ class map extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Set<Marker> _markers = {
+      Marker(
+          markerId: MarkerId('Mapua'),
+          position: LatLng(14.590475794207904, 120.97795912134634),
+          infoWindow: InfoWindow(
+              title: 'Mapua University', snippet: 'Evacuation Center')),
+      Marker(
+          markerId: MarkerId('Casa Consuelo'),
+          position: LatLng(14.590851222365302, 120.9769847627427),
+          infoWindow: InfoWindow(
+              title: 'Casa Consuelo Dormitory', snippet: 'Evacuation Center'),
+          onTap: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => mapuaevac()));
+          }),
+      Marker(
+          markerId: MarkerId('Casa Paz'),
+          position: LatLng(14.590973120670538, 120.97663003862802),
+          infoWindow: InfoWindow(
+              title: 'Casa Paz Corte Real', snippet: 'Evacuation Center')),
+    };
+
     return Scaffold(
         appBar: AppBar(
           leading: IconButton(
@@ -46,7 +70,7 @@ class map extends StatelessWidget {
             GoogleMap(
               onMapCreated: _onMapCreated,
               initialCameraPosition:
-                  CameraPosition(target: _center, zoom: 11.0),
+                  CameraPosition(target: _center, zoom: 15.0),
               mapType: _currentMapType,
               markers: _markers,
               onCameraMove: _onCameraMove,
