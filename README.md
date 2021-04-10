@@ -1,6 +1,7 @@
 # Salba
-
-![alt text](https://github.com/BlueHacks2021-Sentinels/salba-front-end/blob/main/image/logo.png?raw=true)
+<p align="center">
+  <img src="https://github.com/BlueHacks2021-Sentinels/salba-front-end/blob/main/image/logo.png?raw=true" alt="Sublime's custom image"/>
+</p>
 
 "Salba" is an emergency response mobile application for rescue operations that is supported by mobile mesh networking that makes communication possible even without an internet connection. This offline intercom app also features an interactive map where the user can locate available evacuation centers during disaster calamities. Lastly, Salba also includes a Missing Persons Tracking report page for rescuers to be notified and informed on the idenfication and last seen locations of the people missing.
 
