@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:project/found.dart';
+import 'package:project/missing.dart';
 
 class missingfound extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -25,7 +27,10 @@ class missingfound extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               InkWell(
-                onTap: () {}, //Insert Found Page
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => foundperson()));
+                }, //Insert Found Page
                 child: Container(
                   decoration: BoxDecoration(
                       color: Colors.white,
@@ -40,7 +45,10 @@ class missingfound extends StatelessWidget {
                 ),
               ),
               InkWell(
-                onTap: () {}, //Insert Missing Page
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => missingperson()));
+                }, //Insert Missing Page
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.white,

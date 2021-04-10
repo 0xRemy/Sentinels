@@ -5,7 +5,7 @@ import 'package:flutter/rendering.dart';
 class foundperson extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final urlImage1 = 'image/missingtext.png';
+    final urlImage1 = 'image/foundtext.png';
     final urlImage2 = 'image/foundpersons.png';
 
     return Scaffold(
@@ -13,7 +13,7 @@ class foundperson extends StatelessWidget {
         backgroundColor: Color(0xFFDE6449),
         leading: IconButton(
             icon: Icon(Icons.arrow_back_ios, color: Colors.white),
-            onPressed: () => print('hello')),
+            onPressed: () => Navigator.pop(context)),
         centerTitle: true,
         title: Text(
           'Salba',
