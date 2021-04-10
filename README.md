@@ -1,5 +1,5 @@
 # Salba
-
+"Salba" is an emergency response mobile application for rescue operations that is supported by mobile mesh networking that makes communication possible even without an internet connection. This offline messaging app also features an interactive map where the user can locate available evacuation centers during disaster calamities. Lastly, Salba also includes a Missing Persons Tracking report page for rescuers to be notified and informed on the idenfication and last seen locations of the people missing.
 
 ## Getting Started
 <!-- Insert Project Description -->
@@ -20,7 +20,7 @@ Before installing the needed packages. Ensure that [Flutter](https://flutter.dev
   $ flutter run
   ```
 
-## Usage
+## Roadmap
 
 <!-- CONTACT -->
 ## Contact
