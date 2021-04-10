@@ -8,23 +8,41 @@ class foundperson extends StatelessWidget {
     final urlImage1 = 'image/missingtext.png';
     final urlImage2 = 'image/foundpersons.png';
 
-    return new Container(
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Color(0xFFDE6449),
+        leading: IconButton(
+            icon: Icon(Icons.arrow_back_ios, color: Colors.white),
+            onPressed: () => print('hello')),
+        centerTitle: true,
+        title: Text(
+          'Salba',
+          //style: TextStyle(fontFamily: 'Masque'),
+          textAlign: TextAlign.center,
+        ),
+      ),
+      body: Container(
         decoration: new BoxDecoration(color: Colors.white),
         child: ListView(
             physics: BouncingScrollPhysics(),
             padding: EdgeInsets.all(16),
             children: <Widget>[
-              Image.asset(
-                urlImage1,
-                height: 500,
-                fit: BoxFit.cover,
+              Container(
+                child: Image.asset(
+                  urlImage1,
+                  height: 200,
+                  width: 200,
+                ),
               ),
-              const SizedBox(height: 16),
-              Image.asset(
-                urlImage2,
-                width: 240,
-                height: 750,
+              Container(
+                child: Image.asset(
+                  urlImage2,
+                  width: 240,
+                  height: 600,
+                ),
               ),
-            ]));
+            ]),
+      ),
+    );
   }
 }
