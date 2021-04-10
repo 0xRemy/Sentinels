@@ -67,7 +67,9 @@ class map extends StatelessWidget {
         appBar: AppBar(
           leading: IconButton(
               icon: Icon(Icons.arrow_back, color: const Color(0xFFDE6449)),
-              onPressed: () {}),
+              onPressed: () {
+                Navigator.pop(context);
+              }),
           title: Text(
             'Salba',
             style: TextStyle(

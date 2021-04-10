@@ -7,7 +7,9 @@ class missingfound extends StatelessWidget {
         elevation: 0,
         leading: IconButton(
             icon: Icon(Icons.arrow_back_ios, color: const Color(0xFFDE6449)),
-            onPressed: () {}),
+            onPressed: () {
+              Navigator.pop(context);
+            }),
         backgroundColor: Color(0xFFF2EFE9),
       ),
       backgroundColor: Color(0xFFF2EFE9),
