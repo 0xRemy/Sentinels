@@ -23,7 +23,7 @@ Before installing the needed packages. Ensure that [Flutter](https://flutter.dev
 ## Roadmap
 
 ![alt text](https://github.com/BlueHacks2021-Sentinels/salba-front-end/blob/main/image/readme-image-assets/salba-landing.png?raw=true)
-Salba 
+Salba landing page
 
 ![alt text](https://github.com/BlueHacks2021-Sentinels/salba-front-end/blob/main/image/readme-image-assets/salba-feature1.png?raw=true)
 Salba Push to Talk feature 
