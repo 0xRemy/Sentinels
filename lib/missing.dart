@@ -6,7 +6,7 @@ class missingperson extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final urlImage1 = 'image/missingtext.png';
-    final urlImage2 = 'image/foundpersons.png';
+    final urlImage2 = 'image/missingpersons.png';
 
     return Scaffold(
       appBar: AppBar(
