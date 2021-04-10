@@ -1,16 +1,33 @@
-# project
+# Salba
 
-A new Flutter project.
 
 ## Getting Started
+<!-- Insert Project Description -->
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+### Prerequisites
+Before installing the needed packages. Ensure that [Flutter](https://flutter.dev/) and [Andriod SDK](https://developer.android.com/studio) is installed.
+* flutter
+  ```
+  $ flutter pub pub add google_maps_flutter
+  $ flutter pub pub add cupertino_icons
+  $ flutter pub pub add path_drawing
+  ```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### Installation
+  ```
+  $ git clone https://github.com/BlueHacks2021-Sentinels/salba-front-end.git
+  $ flutter run
+  ```
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Usage
+
+<!-- CONTACT -->
+## Contact
+Van Philip M. Panugan - [LinkedIn](https://www.linkedin.com/in/van-philip-panugan-9a6025184/) - panuganvanphilip@gmail.com
+
+Katreen Nicole A. Eisma - [LinkedIn](https://www.linkedin.com/in/katreeneisma/) - 
+
+Claudee Khiarra R. Directo - [LinkedIn](https://www.linkedin.com/in/claudeedirecto/)  - claudeekdirecto@gmail.com
+
+Joshua Ron G. Garcia - [LinkedIn](https://www.linkedin.com/in/joshuarong/) - 
