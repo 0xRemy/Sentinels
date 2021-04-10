@@ -23,7 +23,7 @@ Before installing the needed packages. Ensure that [Flutter](https://flutter.dev
 ## Roadmap
 
 ![alt text](https://github.com/BlueHacks2021-Sentinels/salba-front-end/blob/main/image/readme-image-assets/salba-landing.png?raw=true)
-Salba landing page
+Salba 
 
 ![alt text](https://github.com/BlueHacks2021-Sentinels/salba-front-end/blob/main/image/readme-image-assets/salba-feature1.png?raw=true)
 Salba Push to Talk feature 
@@ -32,7 +32,7 @@ Salba Push to Talk feature
 Salba Evacuation Center Interactive Map + Updates feature
 
 ![alt text](https://github.com/BlueHacks2021-Sentinels/salba-front-end/blob/main/image/readme-image-assets/salba-feature3.png?raw=true)
-Salba reuniting families feature 
+Salba reuniting families feature
 
 
 <!-- CONTACT -->
