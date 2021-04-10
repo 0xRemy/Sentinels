@@ -17,7 +17,7 @@ class foundperson extends StatelessWidget {
         centerTitle: true,
         title: Text(
           'Salba',
-          //style: TextStyle(fontFamily: 'Masque'),
+          style: TextStyle(fontFamily: 'Masque'),
           textAlign: TextAlign.center,
         ),
       ),
