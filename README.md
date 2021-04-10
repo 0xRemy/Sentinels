@@ -41,6 +41,9 @@ Salba reuniting families feature
 <!-- CONTACT -->
 ## Contact
 Van Philip M. Panugan - [LinkedIn](https://www.linkedin.com/in/van-philip-panugan-9a6025184/) - panuganvanphilip@gmail.com
+
 Claudee Khiarra R. Directo - [LinkedIn](https://www.linkedin.com/in/claudeedirecto/)  - claudeekdirecto@gmail.com
+
 Katreen Nicole A. Eisma - [LinkedIn](https://www.linkedin.com/in/katreeneisma/) - katreeneisma@gmail.com
+
 Joshua Ron G. Garcia - [LinkedIn](https://www.linkedin.com/in/joshuarong/) - jorongarc@gmail.com
